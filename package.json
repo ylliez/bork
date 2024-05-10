@@ -1,5 +1,5 @@
 {
-  "name": "nodechestra",
+  "name": "bork",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -22,12 +22,12 @@
   "main": "n4m_synth.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ylliez/nodechestra.git"
+    "url": "git+https://github.com/ylliez/bork.git"
   },
   "author": "ISP",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ylliez/nodechestra/issues"
+    "url": "https://github.com/ylliez/bork/issues"
   },
-  "homepage": "https://github.com/ylliez/nodechestra#readme"
+  "homepage": "https://github.com/ylliez/bork#readme"
 }
