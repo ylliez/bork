@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>[TBD]-exp</title>
+  <link rel='stylesheet' type="text/css" href='index.css' />
+  <style>
+    #uiDiv {
+      display: flex;
+      flex-direction: row;
+      background-color: rgb(21, 255, 0);
+    }
+
+    .bar {
+      width: 25vw;
+      height: 100vh;
+      text-align: center;
+      background-color: black;
+    }
+  </style>
+
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/control_utils/control_utils.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/pose/pose.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <div id="container">
+    <video id="capture" style="display: none"></video>
+    <canvas id="canvas" width="1280px" height="720px"></canvas>
+  </div>
+  <div id="uiDiv">
+    <div class="bar" id="amt">
+      <!-- AMOUNT -->
+    </div>
+    <div class="bar" id="dec">
+      <!-- DECAY -->
+    </div>
+    <div class="bar" id="damp">
+      <!-- DAMPENING -->
+    </div>
+    <div class="bar" id="diff">
+      <!-- DIFFUSION -->
+    </div>
+  </div>
+  <div id="titleDiv">EXP</div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="exp.js"></script>
+</body>
+
+</html>
