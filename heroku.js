@@ -31,7 +31,8 @@ io.on('connection', (socket) => {
 exp.on('connection', (socket) => {
   socket.emit("exp connected");
   exp.conns++;
-  Max.post(`${socket.id} joined; ${io.engine.clientsCount} users connected`);
+  // Max.post(`${socket.id} joined; ${io.engine.clientsCount} users connected`);
+  console.log(`${socket.id} joined; ${io.engine.clientsCount} users connected`);
   socket.onAny((event, args) => {
     // Max.outlet(`${socket.id} `, args);
     // Max.outlet(args);
