@@ -42,6 +42,7 @@ socket.on("connect", () => {
             for (const landmarks of results.multiFaceLandmarks) {
                 // draw lip outline
                 drawConnectors(canvasCtx, landmarks, FACEMESH_LIPS, { color: '#15ff00' });
+                // socket.emit("FACE", FACEMESH_LIPS);
                 // // draw all outlines
                 // drawConnectors(canvasCtx, landmarks, FACEMESH_TESSELATION, { color: '#C0C0C070', lineWidth: 1 });
                 // drawConnectors(canvasCtx, landmarks, FACEMESH_RIGHT_EYE, { color: '#FF3030' });
