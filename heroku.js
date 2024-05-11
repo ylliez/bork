@@ -22,11 +22,11 @@ let max = io.of('/max');
 max.on('connection', (socket) => {
   console.log(`Max/MSP client connected. ${io.engine.clientsCount} clients connected`);
 });
+max.on('disconnect', () => { exp.conns = 0; });
 
 io.on('connection', (socket) => {
   console.log(`a new user client joined. ${io.engine.clientsCount} clients connected`);
   socket.emit(`${io.engine.clientsCount}`, `exp`)
-  socket.on("kill", () => { exp.conns = 0; });
 });
 
 exp.on('connection', (socket) => {
