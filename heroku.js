@@ -26,6 +26,7 @@ max.on('connection', (socket) => {
 io.on('connection', (socket) => {
   console.log(`a new user client joined. ${io.engine.clientsCount} clients connected`);
   socket.emit(`${io.engine.clientsCount}`, `exp`)
+  socket.on("kill", () => { exp.conns = 0; });
 });
 
 exp.on('connection', (socket) => {
