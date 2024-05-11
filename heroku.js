@@ -34,10 +34,12 @@ exp.on('connection', (socket) => {
   Max.post(`${socket.id} joined; ${io.engine.clientsCount} users connected`);
   socket.onAny((event, args) => {
     // Max.outlet(`${socket.id} `, args);
-    Max.outlet(args);
+    // Max.outlet(args);
+    max.emit(args);
   });
   socket.on("disconnect", () => {
-    Max.post(`${socket.id} left; ${io.engine.clientsCount} users connected`);
+    // Max.post(`${socket.id} left; ${io.engine.clientsCount} users connected`);
+    console.log(`${socket.id} left; ${io.engine.clientsCount} users connected`);
     exp.conns--;
   });
 });
