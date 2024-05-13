@@ -33,7 +33,7 @@ exp.on('connection', (socket) => {
   socket.onAny((event, args) => {
     // Max.outlet(`${socket.id} `, args);
     // Max.outlet(args);
-    Max.outlet(`user${fakeID}`, args);
+    Max.outlet(`u${fakeID}`, args);
   });
   socket.on("disconnect", () => {
     Max.post(`${socket.id} left; ${io.engine.clientsCount} users connected`);
