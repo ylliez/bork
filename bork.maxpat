@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 79.0, 1041.0, 787.0 ],
+		"rect" : [ 34.0, 79.0, 655.0, 787.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -100,12 +100,13 @@
 			}
 , 			{
 				"box" : 				{
+					"autofit" : 1,
 					"id" : "obj-134",
 					"maxclass" : "fpic",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "jit_matrix" ],
-					"patching_rect" : [ 884.0, 1122.783171574274547, 513.1181124450477, 498.319901406728832 ],
+					"patching_rect" : [ 884.0, 1122.783171574274547, 513.1181124450477, 513.1181124450477 ],
 					"pic" : "MBP SSD:/Users/mac/Desktop/_ACD/M1/FAFS680/bork_assets/bork_QR.png",
 					"presentation" : 1,
 					"presentation_rect" : [ 28.0, 191.783171574274547, 513.1181124450477, 498.319901406728832 ]
@@ -2572,7 +2573,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 560.862033389232238, 150.616815447879844, 104.0, 22.0 ],
-					"text" : "u84 1.168006"
+					"text" : "u2 0"
 				}
 
 			}
@@ -4072,8 +4073,6 @@
 					"saved_object_attributes" : 					{
 						"autostart" : 0,
 						"defer" : 0,
-						"node_bin_path" : "",
-						"npm_bin_path" : "",
 						"watch" : 0
 					}
 ,
@@ -4346,6 +4345,8 @@
 					"saved_object_attributes" : 					{
 						"autostart" : 0,
 						"defer" : 0,
+						"node_bin_path" : "",
+						"npm_bin_path" : "",
 						"watch" : 0
 					}
 ,
